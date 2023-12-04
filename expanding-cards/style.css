@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+root {
+--base-width: 40px;
+--expand-width: 300px;
+}
+
+body {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    height: 100vh;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all 600ms ease-in;
+
+}
+.card p {
+    color: white;
+    z-index: 2;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    font-size: 0px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.card img {
+    z-index: 1;
+}
+
+#card-1 {
+    width: 6000px;
+}
+#p1 {
+    font-size: 30px;
+}
